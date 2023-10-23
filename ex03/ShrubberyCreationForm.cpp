@@ -43,7 +43,15 @@ void	ShrubberyCreationForm::execute(Bureaucrat const & executor) const
 	std::ofstream	Write(file, std::ios::out | std::ios::trunc);
 	if (!Write.is_open())
 		throw ShrubberyCreationForm::OpenFileException();
-	Write << "arbol jaja";
+	Write << 
+	"      *   " << std::endl <<
+	"     /.\\" << std::endl << 
+	"    /o..\\" << std::endl << 
+	"    /..o\\" << std::endl <<
+	"   /.o..o\\" << std::endl <<
+	"   /...o.\\ " << std::endl <<
+	"  /..o....\\ "<< std::endl <<
+	"  ^^^[_]^^^";
 }
 
 std::ostream &operator<<(std::ostream & o, ShrubberyCreationForm const & rhs)

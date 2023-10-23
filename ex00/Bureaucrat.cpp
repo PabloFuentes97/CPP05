@@ -76,10 +76,8 @@ std::ostream &operator<<(std::ostream & o, Bureaucrat const & rhs)
 
 void Bureaucrat::testGrade(int grade)
 {
-	
 	if (grade < MAX_GRADE)
 		throw Bureaucrat::GradeTooHighException();
 	if (grade > MIN_GRADE)
 		throw Bureaucrat::GradeTooLowException();
-		
 }

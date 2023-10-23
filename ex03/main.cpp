@@ -17,9 +17,9 @@ int	main(void)
 		return (1);
 	int grade = rand() % 50;
 	std::cout << "Grade: " << grade << std::endl;
-	Bureaucrat	b("manuel", grade);
 	try
 	{
+		Bureaucrat	b("manuel", grade);
 		form->beSigned(b);
 		form->execute(b);
 	}
