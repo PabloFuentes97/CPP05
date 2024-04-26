@@ -8,7 +8,7 @@
 #include <exception>
 
 #define MIN_GRADE 150
-#define MAX_GRADE 0
+#define MAX_GRADE 1
 
 class	Bureaucrat{
 	private:

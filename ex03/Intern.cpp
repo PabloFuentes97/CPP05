@@ -3,6 +3,24 @@
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
 
+Intern::Intern()
+{
+
+}
+Intern::Intern(Intern &src)
+{
+	static_cast<void>(src);
+}
+Intern::~Intern()
+{
+
+}
+Intern	&Intern::operator=(Intern const &rhs)
+{
+	static_cast<void>(rhs);
+	return (*this);
+}
+
 AForm	*Intern::makeForm(std::string type, std::string target) const
 {
 	const char	*names[3] = {"ShrubberyCreation", "RobotomyRequest", "PresidentialPardon"};
